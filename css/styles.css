@@ -64,7 +64,7 @@ h2::after { content: ""; display: block; width: 90px; height: 6px; border-radius
 
 /* Tarjeta con tinte pastel */
 .tint { --c: var(--blue); background: color-mix(in srgb, var(--c) 12%, #fff); border-radius: 28px; padding: 26px;
-  text-align: center; transition: transform .25s, box-shadow .25s; }
+  text-align: center; transition: transform .25s, box-shadow .25s, opacity .6s; }
 .tint:hover { transform: translateY(-5px); box-shadow: 0 18px 32px -18px var(--c); }
 .tint .ic { margin: 0 auto; }
 .tint h3 { color: var(--c); font-size: 1.25rem; margin: 14px 0 6px; }
@@ -72,7 +72,7 @@ h2::after { content: ""; display: block; width: 90px; height: 6px; border-radius
 
 /* Píldora con icono (principios y temas, como en el manual) */
 .pill { --c: var(--blue); display: flex; gap: 18px; align-items: center; padding: 14px 30px 14px 14px;
-  border-radius: 999px; background: color-mix(in srgb, var(--c) 12%, #fff); transition: transform .25s; }
+  border-radius: 999px; background: color-mix(in srgb, var(--c) 12%, #fff); transition: transform .25s, opacity .6s; }
 .pill:hover { transform: translateX(6px); }
 .pill h3 { color: var(--c); font-size: 1.1rem; letter-spacing: .03em; }
 .pill p { font-size: .96rem; line-height: 1.4; opacity: .88; }
@@ -132,7 +132,7 @@ h2::after { content: ""; display: block; width: 90px; height: 6px; border-radius
 .tb { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
 .tb div { --c: var(--blue); display: flex; gap: 12px; align-items: center; padding: 18px 20px; border-radius: 22px;
   background: color-mix(in srgb, var(--c) 12%, #fff); animation: pop .35s both; }
-.tb i { font-style: normal; font-size: 1.5rem; }
+.tb .ic { width: 42px; height: 42px; box-shadow: none; }
 @keyframes pop { from { opacity: 0; transform: scale(.94); } }
 .pullquote { margin-top: 40px; text-align: center; font: 1.5rem var(--font-script); color: var(--navy); }
 
@@ -150,6 +150,19 @@ h2::after { content: ""; display: block; width: 90px; height: 6px; border-radius
 .quiz .yes { background: var(--green); }
 .quiz .no { background: var(--red); }
 .review { text-align: left; max-width: 400px; margin: 12px auto 24px; list-style: disc inside; color: var(--mu); }
+
+/* Casos y repaso */
+.quiz p { margin-bottom: 18px; }
+.kicker { display: block; color: var(--teal); font: 500 .85rem var(--font-head); letter-spacing: .1em; text-transform: uppercase; margin-bottom: 8px; }
+.opts { display: grid; gap: 10px; margin-bottom: 18px; }
+.opts button { font: 600 1rem var(--font-body); text-align: left; padding: 13px 20px; border: 2px solid var(--line);
+  border-radius: 22px; background: #fff; color: var(--ink); cursor: pointer; transition: border-color .2s, background .2s; }
+.opts button:hover:not(:disabled) { border-color: var(--blue); background: var(--soft); }
+.opts button:disabled { cursor: default; }
+.opts .is-ok { border-color: var(--green); background: color-mix(in srgb, var(--green) 14%, #fff); }
+.opts .is-bad { border-color: var(--red); background: color-mix(in srgb, var(--red) 12%, #fff); }
+.fb { text-align: left; }
+.fb .btn { display: block; margin: 0 auto; }
 
 /* Ruta: línea de tiempo alterna */
 .tl { position: relative; max-width: 760px; margin: 0 auto; }
@@ -183,12 +196,14 @@ h2::after { content: ""; display: block; width: 90px; height: 6px; border-radius
 .ring div { width: 148px; height: 148px; border-radius: 50%; background: #fff; display: grid; place-items: center;
   font: 500 2.4rem var(--font-head); color: var(--navy); }
 
+.journal { max-width: 640px; margin: 48px auto 0; text-align: center; }
+.journal h3 { color: var(--navy); font-size: 1.4rem; margin-bottom: 8px; }
+.journal p { margin-bottom: 12px; }
+.journal textarea { width: 100%; margin-top: 16px; padding: 16px 18px; border: 2px solid var(--line); border-radius: 22px;
+  font: inherit; color: var(--ink); resize: vertical; }
+.journal #journal-saved { margin: 8px 0 0; font-size: .9rem; min-height: 1.4em; }
+
 /* Cierre */
-.cta { display: flex; flex-wrap: wrap; gap: 30px; align-items: center; justify-content: center; padding: 40px;
-  background: var(--soft); border-radius: 40px; }
-.cta svg { width: 96px; flex: none; }
-.cta h3 { color: var(--navy); font-size: 1.6rem; }
-.cta p { color: var(--mu); max-width: 400px; }
 .footer { text-align: center; padding: 30px 20px 50px; }
 .footer b { font: 400 1.9rem var(--font-script); color: var(--navy); }
 

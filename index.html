@@ -15,7 +15,7 @@
   <div class="wrap">
     <a href="#inicio">Inicio</a><a href="#vision">Visión</a><a href="#principios">Principios</a>
     <a href="#pilares">Pilares</a><a href="#temas">Temas</a><a href="#practica">Práctica</a>
-    <a href="#brujula">Brújula</a><a href="#ruta">Ruta</a><a href="#compromiso">Compromiso</a>
+    <a href="#brujula">Brújula</a><a href="#casos">Casos</a><a href="#repaso">Repaso</a><a href="#ruta">Ruta</a><a href="#compromiso">Compromiso</a>
   </div>
 </nav>
 
@@ -95,6 +95,22 @@
     </div>
   </section>
 
+    <section class="section" id="casos">
+    <div class="wrap">
+      <h2 class="rv">Casos prácticos</h2>
+      <p class="sub rv">Elige qué harías en cada situación y descubre qué principio entra en juego.</p>
+      <div class="quiz rv" id="case-box"></div>
+    </div>
+  </section>
+
+  <section class="section" id="repaso">
+    <div class="wrap">
+      <h2 class="rv">Pon a prueba lo aprendido</h2>
+      <p class="sub rv">Seis preguntas rápidas para repasar el manual.</p>
+      <div class="quiz rv" id="trivia-box"></div>
+    </div>
+  </section>
+
   <section class="section" id="ruta">
     <div class="wrap">
       <h2 class="rv">Ruta de 8 semanas</h2>
@@ -114,17 +130,12 @@
           <p id="commit-msg">Empieza marcando uno</p>
         </aside>
       </div>
-    </div>
-  </section>
-
-  <section class="section section--tight">
-    <div class="wrap">
-      <div class="cta rv">
-        <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18.5h2"/><circle cx="12" cy="9" r="1.6"/><path d="M9 14a3 3 0 0 1 6 0"/></svg>
-        <div>
-          <h3>Continúa tu compromiso</h3>
-          <p>Escanea el QR para explorar nuestro espacio digital y descubre nuevas formas de aplicar la ética en nuestra vida.</p>
-        </div>
+      <div class="journal rv">
+        <h3>Mi reflexión</h3>
+        <p class="muted" id="journal-prompt"></p>
+        <button type="button" class="btn btn--ghost" id="journal-next">Otra pregunta</button>
+        <textarea id="journal" rows="4" aria-label="Mi reflexión" placeholder="Escribe aquí tu reflexión…"></textarea>
+        <p class="muted" id="journal-saved" aria-live="polite"></p>
       </div>
     </div>
   </section>
