@@ -6,7 +6,7 @@
   const $  = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
   const render = (sel, items, tpl) => { $(sel).innerHTML = items.map(tpl).join(""); };
-  const ico = n => `<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${DATA.icons[n] || ""}</svg>`;
+  const ico = n => `<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${DATA.icons[n] || ""}</svg>`;
   const tone = c => `style="--c:var(--${c})"`;
 
   /* ---------- Plantillas ---------- */
