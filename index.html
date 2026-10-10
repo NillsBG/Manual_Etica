@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Manual Ético para Profesionales</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700&family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="Secciones">
+  <div class="wrap">
+    <a href="#inicio">Inicio</a><a href="#vision">Visión</a><a href="#principios">Principios</a>
+    <a href="#pilares">Pilares</a><a href="#temas">Temas</a><a href="#practica">Práctica</a>
+    <a href="#brujula">Brújula</a><a href="#ruta">Ruta</a><a href="#compromiso">Compromiso</a>
+  </div>
+</nav>
+
+<main>
+  <header class="hero" id="inicio">
+    <div class="wrap">
+      <div class="blob blob--blue"></div>
+      <div class="blob blob--orange"></div>
+      <svg class="logo" viewBox="0 0 120 90" fill="none" aria-hidden="true">
+        <g fill="var(--navy)"><circle cx="60" cy="22" r="11"/><circle cx="32" cy="36" r="8"/><circle cx="88" cy="36" r="8"/>
+        <path d="M42 70c0-12 8-20 18-20s18 8 18 20z"/><path d="M18 66c0-9 6-15 14-15 3 0 5 1 7 2-5 4-8 9-9 13z"/><path d="M102 66c0-9-6-15-14-15-3 0-5 1-7 2 5 4 8 9 9 13z"/></g>
+        <path d="M8 82c20-12 34-10 52 0 18-10 32-12 52 0" stroke="var(--teal)" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      <h1>Manual Ético<small>para profesionales</small></h1>
+      <p class="hero__tag">La ética comienza con nosotros</p>
+      <a class="btn" href="#brujula">Probar la brújula ética</a>
+    </div>
+  </header>
+
+  <section class="section" id="vision">
+    <div class="wrap">
+      <h2 class="rv">Nuestra visión</h2>
+      <p class="sub rv">La ética es una decisión diaria.</p>
+      <div class="stamp rv">“La ética comienza con nosotros”</div>
+      <div class="grid rv" id="vision-cards"></div>
+      <div class="values rv">
+        <h3 class="values__title">Nuestros valores</h3>
+        <div class="values__list" id="values" role="group" aria-label="Valores"></div>
+        <p class="values__detail" id="value-detail" aria-live="polite">Toca un valor para conocerlo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="principios">
+    <div class="wrap">
+      <h2 class="rv">Nuestros principios</h2>
+      <p class="sub rv">Nos sirven como guía para tomar decisiones y mantener una conducta ética.</p>
+      <div class="stack" id="principles"></div>
+    </div>
+  </section>
+
+  <section class="section" id="pilares">
+    <div class="wrap">
+      <h2 class="rv">Nuestros pilares</h2>
+      <p class="sub rv">Valores fundamentales que sostienen nuestra conducta y nos ayudan a actuar con ética en todo momento.</p>
+      <div class="grid grid--pillars" id="pillars"></div>
+      <div class="eq rv"><span>Honestidad</span>+<span>Generosidad</span>+<span>Trabajo duro</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="temas">
+    <div class="wrap">
+      <h2 class="rv">Temas</h2>
+      <p class="sub rv">Nuevos temas que tienen relación con nuestros principios y pilares.</p>
+      <div class="stack stack--wide" id="topics"></div>
+    </div>
+  </section>
+
+  <section class="section" id="practica">
+    <div class="wrap">
+      <h2 class="rv">La ética en la práctica</h2>
+      <p class="sub rv">Se demuestra en las pequeñas y grandes decisiones del día a día.</p>
+      <div class="tabs" id="tabs" role="tablist"></div>
+      <div class="tb" id="tab-panel" role="tabpanel"></div>
+      <p class="pullquote">“La ética no es solo lo que decimos, sino lo que hacemos”</p>
+    </div>
+  </section>
+
+  <section class="section" id="brujula">
+    <div class="wrap">
+      <h2 class="rv">Brújula ética</h2>
+      <p class="sub rv">Ante una situación difícil, pregúntate:</p>
+      <div class="quiz rv">
+        <div class="quiz__progress" id="quiz-progress" aria-hidden="true"></div>
+        <div id="quiz-body" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ruta">
+    <div class="wrap">
+      <h2 class="rv">Ruta de 8 semanas</h2>
+      <p class="sub rv">De la teoría a la práctica, paso a paso.</p>
+      <ol class="tl" id="steps"></ol>
+    </div>
+  </section>
+
+  <section class="section" id="compromiso">
+    <div class="wrap">
+      <h2 class="rv">Compromiso ético</h2>
+      <p class="sub rv">Cada uno de nosotros tiene la responsabilidad de aplicar la ética en sus decisiones, relaciones y acciones. Marca lo que te comprometes a practicar.</p>
+      <div class="commit rv">
+        <div id="commit-list"></div>
+        <aside class="commit__side">
+          <div class="ring" id="ring"><div id="commit-pct">0%</div></div>
+          <p id="commit-msg">Empieza marcando uno</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="cta rv">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18.5h2"/><circle cx="12" cy="9" r="1.6"/><path d="M9 14a3 3 0 0 1 6 0"/></svg>
+        <div>
+          <h3>Continúa tu compromiso</h3>
+          <p>Escanea el QR para explorar nuestro espacio digital y descubre nuevas formas de aplicar la ética en nuestra vida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><b>¡Juntos construimos un mejor futuro!</b></footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
